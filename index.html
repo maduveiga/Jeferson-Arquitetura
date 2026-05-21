@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arquitetura Contemporânea | Projetos Residenciais, Comerciais e Interiores</title>
+  <meta name="description" content="Arquitetura pensada para quem valoriza forma, função e presença. Projetos residenciais, comerciais e design de interiores com estética contemporânea e atenção aos detalhes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,200;1,9..40,300&family=Syne:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header" class="header">
+    <div class="header-inner">
+      <a href="#inicio" class="logo-link" id="logo-link">
+        <img src="midia/LG.png" alt="Logo" class="logo-img" id="logo-img" />
+      </a>
+      <nav class="nav" id="main-nav" aria-label="Navegação principal">
+        <ul class="nav-list">
+          <li><a href="#inicio" class="nav-item active" id="nav-inicio">Início</a></li>
+          <li><a href="#projetos" class="nav-item" id="nav-projetos">Projetos</a></li>
+          <li><a href="#sobre" class="nav-item" id="nav-sobre">Sobre</a></li>
+          <li><a href="#blog" class="nav-item" id="nav-blog">Blog</a></li>
+          <li><a href="#contato" class="nav-item" id="nav-contato">Contato</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="#inicio" class="mobile-nav-item" id="mnav-inicio">Início</a></li>
+      <li><a href="#projetos" class="mobile-nav-item" id="mnav-projetos">Projetos</a></li>
+      <li><a href="#sobre" class="mobile-nav-item" id="mnav-sobre">Sobre</a></li>
+      <li><a href="#blog" class="mobile-nav-item" id="mnav-blog">Blog</a></li>
+      <li><a href="#contato" class="mobile-nav-item" id="mnav-contato">Contato</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio" aria-label="Hero">
+    <div class="hero-video-wrap">
+      <video class="hero-video" id="hero-video" autoplay muted loop playsinline>
+        <source src="midia/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-tag reveal-up" id="hero-tag">Arquitetura &amp; Interiores</div>
+      <h1 class="hero-title reveal-up" id="hero-title">
+        Arquitetura pensada para<br />quem valoriza forma,<br />função e presença
+      </h1>
+      <p class="hero-sub reveal-up" id="hero-sub">
+        Projetos residenciais, comerciais e interiores com estética contemporânea e atenção aos detalhes
+      </p>
+      <div class="hero-cta reveal-up" id="hero-cta">
+        <a href="https://wa.me/5547988552140" class="btn btn-primary" id="btn-whatsapp" target="_blank" rel="noopener noreferrer">
+          Falar no WhatsApp
+        </a>
+        <a href="https://www.instagram.com/jeferson_arquitetura" class="btn btn-outline" id="btn-instagram" target="_blank" rel="noopener noreferrer">
+          Acompanhar no Instagram
+        </a>
+      </div>
+      <div class="hero-location reveal-up" id="hero-location" aria-label="Localização">
+        <svg width="10" height="13" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M5 0C2.239 0 0 2.239 0 5c0 3.75 5 8 5 8s5-4.25 5-8c0-2.761-2.239-5-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z" fill="currentColor"/>
+        </svg>
+        Itajaí, SC
+      </div>
+    </div>
+    <div class="hero-scroll-indicator" id="hero-scroll">
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- MANIFESTO STRIP -->
+  <section class="manifesto" id="manifesto" aria-label="Manifesto">
+    <div class="container">
+      <div class="manifesto-inner reveal-up" id="manifesto-inner">
+        <span class="manifesto-number">01</span>
+        <p class="manifesto-text">
+          Cada espaço é uma oportunidade de criar algo verdadeiramente significativo. Nossa abordagem combina rigor técnico, sensibilidade estética e escuta ativa para transformar intenções em arquitetura construída.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="servicos" aria-label="Serviços">
+    <div class="container">
+      <div class="section-header reveal-up" id="services-header">
+        <span class="section-tag">O que fazemos</span>
+        <h2 class="section-title">Especialidades</h2>
+      </div>
+      <div class="services-grid" id="services-grid">
+        <div class="service-card reveal-up" id="service-residencial">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 13L14 3L25 13V25H18V18H10V25H3V13Z" stroke="#1C1C1E" stroke-width="1.2" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Projetos Residenciais</h3>
+          <p class="service-desc">Residências que equilibram privacidade, luz e identidade. Do lote em branco à casa habitada, com gestão integral de cada etapa do processo.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card reveal-up" id="service-comercial">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="8" width="22" height="17" stroke="#1C1C1E" stroke-width="1.2" fill="none"/>
+              <path d="M8 8V5H20V8" stroke="#1C1C1E" stroke-width="1.2" fill="none"/>
+              <line x1="14" y1="8" x2="14" y2="25" stroke="#1C1C1E" stroke-width="1.2"/>
+              <line x1="3" y1="16" x2="25" y2="16" stroke="#1C1C1E" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Projetos Comerciais</h3>
+          <p class="service-desc">Ambientes corporativos e comerciais que comunicam posicionamento de marca, otimizam fluxos e elevam a experiência de quem os frequenta.</p>
+          <div class="service-line"></div>
+        </div>
+        <div class="service-card reveal-up" id="service-interiores">
+          <div class="service-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="3" y="3" width="10" height="10" stroke="#1C1C1E" stroke-width="1.2" fill="none"/>
+              <rect x="15" y="3" width="10" height="10" stroke="#1C1C1E" stroke-width="1.2" fill="none"/>
+              <rect x="3" y="15" width="10" height="10" stroke="#1C1C1E" stroke-width="1.2" fill="none"/>
+              <rect x="15" y="15" width="10" height="10" stroke="#1C1C1E" stroke-width="1.2" fill="none"/>
+            </svg>
+          </div>
+          <h3 class="service-name">Design de Interiores</h3>
+          <p class="service-desc">Composição de interiores com curadoria de materiais, mobiliário e iluminação. Espaços que expressam personalidade com sofisticação e coerência.</p>
+          <div class="service-line"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projetos" aria-label="Projetos">
+    <div class="projects-video-hero" id="projects-video-hero">
+      <video class="project-hero-video" autoplay muted loop playsinline id="project-video">
+        <source src="midia/PROJETO.mp4" type="video/mp4" />
+      </video>
+      <div class="project-video-overlay"></div>
+      <div class="project-video-content reveal-up" id="project-video-content">
+        <span class="section-tag light">Portfólio</span>
+        <h2 class="project-video-title">Projetos</h2>
+        <p class="project-video-sub">Uma seleção de trabalhos que expressam o processo, os valores e a estética que guiam cada projeto desenvolvido.</p>
+      </div>
+    </div>
+
+    <div class="container projects-container" id="projects-container">
+      <div class="projects-grid" id="projects-grid">
+
+        <div class="project-item reveal-up" id="project-item-1">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80" alt="Residência contemporânea com grandes volumes e ampla integração" class="project-img" loading="lazy" />
+            <div class="project-img-overlay">
+              <span class="project-view">Ver projeto</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-category">Residencial</span>
+            <h3 class="project-title">Residência em volumes</h3>
+          </div>
+        </div>
+
+        <div class="project-item reveal-up" id="project-item-2">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80" alt="Interior minimalista com materiais nobres e luz natural" class="project-img" loading="lazy" />
+            <div class="project-img-overlay">
+              <span class="project-view">Ver projeto</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-category">Interiores</span>
+            <h3 class="project-title">Interior em tons neutros</h3>
+          </div>
+        </div>
+
+        <div class="project-item reveal-up" id="project-item-3">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=800&q=80" alt="Espaço comercial contemporâneo com design funcional" class="project-img" loading="lazy" />
+            <div class="project-img-overlay">
+              <span class="project-view">Ver projeto</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-category">Comercial</span>
+            <h3 class="project-title">Escritório corporativo</h3>
+          </div>
+        </div>
+
+        <div class="project-item reveal-up" id="project-item-4">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80" alt="Fachada residencial moderna com vegetação integrada" class="project-img" loading="lazy" />
+            <div class="project-img-overlay">
+              <span class="project-view">Ver projeto</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-category">Residencial</span>
+            <h3 class="project-title">Casa jardim integrado</h3>
+          </div>
+        </div>
+
+        <div class="project-item reveal-up" id="project-item-5">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80" alt="Sala de estar com mobiliário selecionado e iluminação focal" class="project-img" loading="lazy" />
+            <div class="project-img-overlay">
+              <span class="project-view">Ver projeto</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-category">Interiores</span>
+            <h3 class="project-title">Sala curadoria completa</h3>
+          </div>
+        </div>
+
+        <div class="project-item reveal-up" id="project-item-6">
+          <div class="project-img-wrap">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=800&q=80" alt="Ambiente comercial com identidade visual integrada à arquitetura" class="project-img" loading="lazy" />
+            <div class="project-img-overlay">
+              <span class="project-view">Ver projeto</span>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-category">Comercial</span>
+            <h3 class="project-title">Loja conceito</h3>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta reveal-up" id="projects-cta">
+        <a href="https://wa.me/5547988552140" class="btn btn-dark" id="btn-projetos-wa" target="_blank" rel="noopener noreferrer">
+          Solicitar orçamento
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="sobre" aria-label="Sobre">
+    <div class="container">
+      <div class="about-grid" id="about-grid">
+        <div class="about-text" id="about-text">
+          <span class="section-tag reveal-up">Sobre o estúdio</span>
+          <h2 class="section-title reveal-up" id="about-title">Processo, precisão<br />e escuta ativa</h2>
+          <div class="about-divider reveal-up"></div>
+          <p class="about-para reveal-up" id="about-p1">
+            A arquitetura que praticamos nasce da observação cuidadosa e da recusa ao óbvio. Cada projeto começa com uma imersão profunda no universo do cliente, compreendendo não apenas necessidades funcionais, mas também suas referências estéticas, ritmo de vida e aspirações.
+          </p>
+          <p class="about-para reveal-up" id="about-p2">
+            O processo é deliberadamente lento nas etapas conceituais e preciso nas etapas técnicas. Acreditamos que a qualidade de um projeto está diretamente ligada à qualidade das perguntas feitas antes de qualquer traço riscado.
+          </p>
+          <p class="about-para reveal-up" id="about-p3">
+            O resultado é uma arquitetura que pertenece ao lugar, ao cliente e ao tempo em que é construída. Sem modismos, sem excessos. Forma e função em equilíbrio permanente.
+          </p>
+          <div class="about-stats reveal-up" id="about-stats">
+            <div class="stat-item">
+              <span class="stat-number">12+</span>
+              <span class="stat-label">Anos de experiência</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">80+</span>
+              <span class="stat-label">Projetos entregues</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Especialidades</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal-up" id="about-visual">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=600&q=80" alt="Estúdio de arquitetura contemporâneo com mesa de trabalho e materiais" class="about-portrait" id="about-portrait" loading="lazy" />
+          </div>
+          <div class="about-img-accent">
+            <img src="https://images.unsplash.com/photo-1603796846097-bee99e4a601f?w=400&q=80" alt="Detalhe de projeto arquitetônico com materiais nobres" class="about-accent-img" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section class="blog" id="blog" aria-label="Blog">
+    <div class="container">
+      <div class="section-header reveal-up" id="blog-header">
+        <span class="section-tag">Reflexões</span>
+        <h2 class="section-title">Perspectivas</h2>
+        <p class="section-sub">Ideias, referências e pensamentos sobre arquitetura, espaço e vida contemporânea.</p>
+      </div>
+
+      <div class="blog-grid" id="blog-grid">
+
+        <a href="artigo-silencio.html" class="blog-card reveal-up" id="blog-card-1">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=600&q=80" alt="Projeto residencial minimalista com ampla integração com o exterior" class="blog-card-img" loading="lazy" />
+            <div class="blog-card-overlay"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Residencial</span>
+            <h3 class="blog-card-title">O silêncio como material de projeto</h3>
+            <p class="blog-card-excerpt">Como o vazio, o silêncio e a ausência de ornamento constroem presença e valor em residências contemporâneas.</p>
+            <span class="blog-read">Leia mais</span>
+          </div>
+        </a>
+
+        <a href="artigo-estrategia-marca.html" class="blog-card reveal-up" id="blog-card-2">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1604328698692-f76ea9498e76?w=600&q=80" alt="Espaço corporativo de alto padrão com identidade arquitetônica forte" class="blog-card-img" loading="lazy" />
+            <div class="blog-card-overlay"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Comercial</span>
+            <h3 class="blog-card-title">Arquitetura como estratégia de marca</h3>
+            <p class="blog-card-excerpt">O espaço físico é um dos mais poderosos comunicadores da identidade de uma empresa. Como utilizá-lo com intencionalidade.</p>
+            <span class="blog-read">Leia mais</span>
+          </div>
+        </a>
+
+        <a href="artigo-materiais.html" class="blog-card reveal-up" id="blog-card-3">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1618221118493-9cfa1a1c00da?w=600&q=80" alt="Texturas e materiais nobres em ambiente contemporâneo" class="blog-card-img" loading="lazy" />
+            <div class="blog-card-overlay"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Interiores</span>
+            <h3 class="blog-card-title">A linguagem dos materiais</h3>
+            <p class="blog-card-excerpt">Concreto, madeira, pedra e aço. Como a escolha de cada material define o caráter e a narrativa de um espaço.</p>
+            <span class="blog-read">Leia mais</span>
+          </div>
+        </a>
+
+        <a href="artigo-contratar-arquiteto.html" class="blog-card reveal-up" id="blog-card-4">
+          <div class="blog-card-img-wrap">
+            <img src="midia/ARQ.jpg" alt="Antes de contratar um arquiteto" class="blog-card-img" loading="lazy" />
+            <div class="blog-card-overlay"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Dicas</span>
+            <h3 class="blog-card-title">Antes de contratar um arquiteto</h3>
+            <p class="blog-card-excerpt">Perguntas essenciais, documentos necessários e como se preparar para ter a melhor experiência em um projeto arquitetônico.</p>
+            <span class="blog-read">Leia mais</span>
+          </div>
+        </a>
+
+        <a href="artigo-monocromia.html" class="blog-card reveal-up" id="blog-card-5">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1631679706909-1844bbd07221?w=600&q=80" alt="Ambiente monocromático de alto padrão com tons neutros e sofisticados" class="blog-card-img" loading="lazy" />
+            <div class="blog-card-overlay"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Ideias</span>
+            <h3 class="blog-card-title">Monocromia e sofisticação</h3>
+            <p class="blog-card-excerpt">Explorar variações de um único tom pode resultar em ambientes de sofisticação inigualável. Uma abordagem para espaços contemporâneos.</p>
+            <span class="blog-read">Leia mais</span>
+          </div>
+        </a>
+
+        <a href="artigo-referencias-europeias.html" class="blog-card reveal-up" id="blog-card-6">
+          <div class="blog-card-img-wrap">
+            <img src="https://images.unsplash.com/photo-1600585154526-990dced4db0d?w=600&q=80" alt="Arquitetura europeia contemporânea com volumes limpos e paleta neutra" class="blog-card-img" loading="lazy" />
+            <div class="blog-card-overlay"></div>
+          </div>
+          <div class="blog-card-content">
+            <span class="blog-tag">Inspirações</span>
+            <h3 class="blog-card-title">Referências europeias no Brasil</h3>
+            <p class="blog-card-excerpt">Como absorver a essência da arquitetura escandinava e mediterrânea sem perder identidade e relevância para o contexto local.</p>
+            <span class="blog-read">Leia mais</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA STRIP -->
+  <section class="cta-strip" id="cta-strip" aria-label="Chamada para ação">
+    <div class="container">
+      <div class="cta-strip-inner reveal-up" id="cta-strip-inner">
+        <h2 class="cta-strip-title">Pronto para começar<br />seu projeto?</h2>
+        <a href="https://wa.me/5547988552140" class="btn btn-light" id="btn-cta-strip" target="_blank" rel="noopener noreferrer">
+          Falar no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contato" aria-label="Contato">
+    <div class="container">
+      <div class="contact-grid" id="contact-grid">
+        <div class="contact-left reveal-up" id="contact-left">
+          <span class="section-tag">Contato</span>
+          <h2 class="section-title" id="contact-title">Vamos conversar<br />sobre seu projeto</h2>
+          <p class="contact-sub" id="contact-sub">Projetos com início previsto para os próximos 90 dias. Entre em contato para verificar disponibilidade e agendar uma conversa inicial sem compromisso.</p>
+          <div class="contact-items" id="contact-items">
+            <div class="contact-item">
+              <span class="contact-label">WhatsApp</span>
+              <a href="https://wa.me/5547988552140" class="contact-value" id="contact-wa" target="_blank" rel="noopener noreferrer">+55 (47) 98855-2140</a>
+            </div>
+            <div class="contact-item">
+              <span class="contact-label">Instagram</span>
+              <a href="https://www.instagram.com/jeferson_arquitetura" class="contact-value" id="contact-ig" target="_blank" rel="noopener noreferrer">@jeferson_arquitetura</a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-right reveal-up" id="contact-right">
+          <form class="contact-form" id="contact-form" novalidate>
+            <div class="form-group" id="form-name-group">
+              <label for="form-name" class="form-label">Nome completo</label>
+              <input type="text" id="form-name" name="name" class="form-input" placeholder="Seu nome" autocomplete="name" />
+            </div>
+            <div class="form-group" id="form-email-group">
+              <label for="form-email" class="form-label">E-mail</label>
+              <input type="email" id="form-email" name="email" class="form-input" placeholder="seu@email.com" autocomplete="email" />
+            </div>
+            <div class="form-group" id="form-type-group">
+              <label for="form-type" class="form-label">Tipo de projeto</label>
+              <select id="form-type" name="type" class="form-input form-select">
+                <option value="">Selecione</option>
+                <option value="residencial">Residencial</option>
+                <option value="comercial">Comercial</option>
+                <option value="interiores">Design de Interiores</option>
+              </select>
+            </div>
+            <div class="form-group" id="form-msg-group">
+              <label for="form-message" class="form-label">Mensagem</label>
+              <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="Conte um pouco sobre seu projeto..." rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-dark btn-full" id="form-submit">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-top" id="footer-top">
+        <div class="footer-brand" id="footer-brand">
+          <img src="midia/LG.png" alt="Logo" class="footer-logo" />
+          <p class="footer-tagline">Arquitetura com identidade, propósito e precisão.</p>
+        </div>
+        <div class="footer-links" id="footer-links">
+          <span class="footer-links-title">Navegação</span>
+          <ul class="footer-nav">
+            <li><a href="#inicio" class="footer-nav-link" id="fn-inicio">Início</a></li>
+            <li><a href="#projetos" class="footer-nav-link" id="fn-projetos">Projetos</a></li>
+            <li><a href="#sobre" class="footer-nav-link" id="fn-sobre">Sobre</a></li>
+            <li><a href="#blog" class="footer-nav-link" id="fn-blog">Blog</a></li>
+            <li><a href="#contato" class="footer-nav-link" id="fn-contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact" id="footer-contact">
+          <span class="footer-links-title">Contato direto</span>
+          <a href="https://wa.me/5547988552140" class="footer-cta-btn" id="footer-wa" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            WhatsApp
+          </a>
+          <a href="https://www.instagram.com/jeferson_arquitetura" class="footer-ig-link" id="footer-ig" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+            </svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom" id="footer-bottom">
+        <p class="footer-copy">&copy; 2026. Todos os direitos reservados.</p>
+        <span class="footer-location" aria-label="Localização">
+          <svg width="9" height="12" viewBox="0 0 10 13" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M5 0C2.239 0 0 2.239 0 5c0 3.75 5 8 5 8s5-4.25 5-8c0-2.761-2.239-5-5-5zm0 7a2 2 0 110-4 2 2 0 010 4z" fill="currentColor"/>
+          </svg>
+          Itajaí, SC
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
