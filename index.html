@@ -47,7 +47,7 @@
   <!-- HERO -->
   <section class="hero" id="inicio" aria-label="Hero">
     <div class="hero-video-wrap">
-      <video class="hero-video" id="hero-video" autoplay muted loop playsinline>
+      <video class="hero-video" id="hero-video" autoplay muted loop playsinline preload="auto">
         <source src="midia/hero.mp4" type="video/mp4" />
       </video>
       <div class="hero-overlay"></div>
@@ -143,8 +143,8 @@
   <!-- PROJECTS -->
   <section class="projects" id="projetos" aria-label="Projetos">
     <div class="projects-video-hero" id="projects-video-hero">
-      <video class="project-hero-video" autoplay muted loop playsinline id="project-video">
-        <source src="midia/PROJETO.mp4" type="video/mp4" />
+      <video class="project-hero-video" muted loop playsinline id="project-video" preload="none">
+        <source data-src="midia/PROJETO.mp4" type="video/mp4" />
       </video>
       <div class="project-video-overlay"></div>
       <div class="project-video-content reveal-up" id="project-video-content">

@@ -154,4 +154,25 @@
     })();
   }
 
+  /* ── Lazy load videos ── */
+  const lazyVideos = document.querySelectorAll('video[preload="none"]');
+  if ('IntersectionObserver' in window) {
+    const videoObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(video => {
+        if (video.isIntersecting) {
+          const videoEl = video.target;
+          const source = videoEl.querySelector('source[data-src]');
+          if (source) {
+            source.src = source.getAttribute('data-src');
+            videoEl.load();
+            videoEl.play().catch(e => console.log('Autoplay prevented', e));
+          }
+          observer.unobserve(videoEl);
+        }
+      });
+    }, { rootMargin: '0px 0px 800px 0px' });
+
+    lazyVideos.forEach(v => videoObserver.observe(v));
+  }
+
 })();
